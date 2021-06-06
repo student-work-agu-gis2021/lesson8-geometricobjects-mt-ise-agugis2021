@@ -34,7 +34,8 @@ print(list(data.columns))
 # 
 
 # YOUR CODE HERE 3 to define empty lists orig_points and dest_points
-
+orig_points=[]
+dest_points=[]
 # CODE FOR TESTING YOUR SOLUTION
 
 # List length should be zero at this point:
