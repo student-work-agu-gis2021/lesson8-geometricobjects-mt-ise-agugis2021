@@ -158,7 +158,11 @@ def create_od_lines(a,b):
   line2=LineString([orig,dest])
   line2.append(line2)
   return line2
-
+def calculate_total_distance(Line2):
+  total_length=0
+  for line2 in lines2:
+    total_length+=line2.length
+  return total_length
 # CODE FOR TESTING YOUR SOLUTION
 
 # Use the functions
