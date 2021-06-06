@@ -69,7 +69,11 @@ print('dest_points length:', len(dest_points))
 
 # YOUR CODE HERE 4 to append points in orig_points and dest_points
 from shapely.geometry import Point
-
+for index,row in data.iterrows():
+  orig=Point(row['from_x'],row['from_y'])
+  dest=Point(row['to_x'],row['to_y'])
+  orig_points.append(orig)
+  dest_points.append(dest)
 # CODE FOR TESTING YOUR SOLUTION
 
 # This test print should print out the first origin and destination coordinates in the two lists:
