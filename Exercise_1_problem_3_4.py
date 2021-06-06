@@ -155,9 +155,10 @@ print("Total length of all lines is", round(total_length, 2))
 # YOUR CODE HERE 8 to define create_od_lines() and calculate_total_distance()
 lines2=[]
 def create_od_lines(a,b):
-  line2=LineString([orig,dest])
-  line2.append(line2)
-  return line2
+ for orig,dest in zip(a,b):
+   line2=LineString([orig,dest])
+   lines2.append(line2)
+ return lines2
 def calculate_total_distance(Line2):
   total_length=0
   for line2 in lines2:
